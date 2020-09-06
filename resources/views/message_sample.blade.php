@@ -7,10 +7,17 @@
     <title>Messageモデルの利用</title>
 </head>
 <body>
+{{-- レイアウトファイルを指定 --}}
+@extends('layouts.default')
+
+{{-- @yield('content') の部分を穴埋め --}}
+@section('content')
+
     <h1>Messageモデルの利用</h1>
     <p>
         {{ $message->name }}:
         {{ $message->body }}
     </p>
+@endsection
 </body>
 </html>

@@ -49,3 +49,5 @@ Route::get('/message_sample', 'SampleController@message_sample');
 Route::get('/message_practice', 'SampleController@message_practice');
 
 Route::get('/blade_example', 'SampleController@blade_example');
+
+Route::get('/messages', 'MessagesController@index');
